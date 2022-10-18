@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#main-div {
+  display: flex;
+justify-content: center;
+gap:50px;
+margin-top: 40px;
+}
+
+#tittle {
+  /* display: flex; */
+  margin-left: 33%;
+  color: red;
+  margin-top: 30px;
+}
+
+#first-div {
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+}
+
+.inner-div {
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+.input-items {
+  margin-top: 20px;
+  border: 2px solid rgb(19, 17, 17);
+
+}
+
+.input-items:nth-child(odd) {
+  background-color: red;
+  color: #fff;
+}
+
+.sub-tittle2 {
+  /* margin-top: 20px; */
+}
+
+.plaseholder {
+  margin-top: 20px;
+}
+
+.item {
+
+}
+
+#last-div {
+
+}
+
+.btndiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+}
+
+.submit-btn {
+  margin-top: 20px;
+}
