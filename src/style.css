@@ -13,7 +13,6 @@ margin-top: 40px;
 }
 
 #tittle {
-  /* display: flex; */
   margin-left: 33%;
   color: red;
   margin-top: 30px;
@@ -22,7 +21,6 @@ margin-top: 40px;
 #first-div {
 display: flex;
 flex-direction: column;
-/* align-items: center; */
 }
 
 .inner-div {
@@ -42,20 +40,8 @@ gap: 20px;
   color: #fff;
 }
 
-.sub-tittle2 {
-  /* margin-top: 20px; */
-}
-
 .plaseholder {
   margin-top: 20px;
-}
-
-.item {
-
-}
-
-#last-div {
-
 }
 
 .btndiv {
