@@ -9,12 +9,11 @@
   display: flex;
 justify-content: center;
 gap:50px;
-margin-top: 40px;
+margin-top: 30px;
 }
 
 #tittle {
   margin-left: 33%;
-  color: red;
   margin-top: 30px;
 }
 
@@ -29,15 +28,18 @@ flex-direction: row;
 gap: 20px;
 }
 
+.refreash-btn {
+  padding: 5px;
+}
+
 .input-items {
   margin-top: 20px;
   border: 2px solid rgb(19, 17, 17);
 
 }
 
-.input-items:nth-child(odd) {
+.input-items:nth-child(1) {
   background-color: red;
-  color: #fff;
 }
 
 .plaseholder {
@@ -53,4 +55,5 @@ gap: 20px;
 
 .submit-btn {
   margin-top: 20px;
+  padding: 5px;
 }
