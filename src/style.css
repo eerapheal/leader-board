@@ -35,11 +35,12 @@ gap: 20px;
 .input-items {
   margin-top: 20px;
   border: 2px solid rgb(19, 17, 17);
+  /* background-color: black; */
 
 }
 
-.input-items:nth-child(1) {
-  background-color: red;
+.input-items:nth-child(odd) {
+  background-color: black;
 }
 
 .plaseholder {
