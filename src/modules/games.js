@@ -6,3 +6,40 @@ const fetchScores = async () => {
   return data;
 };
 
+const refresh = () => {
+  table.innerHTML = '';
+  const gamers = [];
+  fetchScores().then((entry) => {
+    Object.entries(entry.result).forEach(([, value]) => {
+      gamers.push(JSON.stringify(value));
+      const listItems = document.createElement('tr');
+      listItems.innerHTML = `
+      <td>${value.user}</td>
+      <td>${value.score}</td>`;
+      table.appendChild(listItems);
+    });
+  });
+};
+
+const add = async (newScore) => {
+  const response = await fetch(`${url}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newScore),
+  });
+  const data = await response.json();
+  refresh();
+  return data;
+};
+
+const create = () => {
+  const newScore = {
+    user: document.getElementById('name').value,
+    score: document.getElementById('score').value,
+  };
+  document.getElementById('name').value = '';
+  document.getElementById('score').value = '';
+  add(newScore);
+};
