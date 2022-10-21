@@ -43,3 +43,14 @@ const create = () => {
   document.getElementById('score').value = '';
   add(newScore);
 };
+
+refresh();
+
+refreshBtn.addEventListener('click', () => {
+  refresh();
+});
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  create();
+});
