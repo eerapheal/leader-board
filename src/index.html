@@ -4,38 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>>Leaderboard Scores</title>
 </head>
 <body>
   <main>
     <section id="main-sec">
-      <h1 id="tittle">LeaderBaord</h1>
-      <div id ="main-div">
-      <div>
-      <div id="first-div">
-        <div class="inner-div">
-          <h3 class="sub-tittle1">Recent scores</h3>
-          <button class="refreash-btn" type="button">Refreash</button>
+      <div class="wrapper">
+        <h1>Leaderboard</h1>
+        <div class="leaderboard">
+          <div class="left">
+            <div class="refresh-container">
+              <h2>Recent scores</h2>
+              <button id="refresh" class="refresh">Refresh</button>
+            </div>
+            <table id="table" class="tablescore"></table>
+          </div>
+            <div class="right">
+                <h2 class="addscore">Add your score</h2>
+                <form class="form" method="post" action="submit">
+                    <input id="name"  type="text" name="user" required placeholder="Name"><br>
+                    <input id="score" type="number" name="score" required placeholder="Score"><br>
+                    <input id="submit"  type="submit" name="Submit">
+                </form>
+            </div>
         </div>
-        <ul class="input-items">
-          <li class="item">Name: 100</li>
-          <li class="item">Name: 20</li>
-          <li class="item">Name: 50</li>
-          <li class="item">Name: 78</li>
-          <li class="item">Name: 125</li>
-          <li class="item">Name: 77</li>
-          <li class="item">Name: 42</li>
-        </ul>
-      </div>
-      </div>
-      <div id="last-div">
-        <h4 class="sub-tittle2">Add your score</h4>
-        <input class="plaseholder" type="text" placeholder="Your name"><br>
-        <input class="plaseholder" type="text" placeholder="Your name"> <br>
-        <div class="btndiv">
-          <button class="submit-btn" type="submit">Submit</button>
-        </div>
-      </div>
     </div>
     </section>
   </main>
