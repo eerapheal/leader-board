@@ -1,4 +1,8 @@
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qk2WUFC6s8bpESSfLGKS/scores';
+const form = document.querySelector('form');
+const refreshBtn = document.getElementById('refresh');
+const table = document.getElementById('table');
+
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/rpN8IMWS1qo5BhRdNfm5/scores';
 
 const fetchScores = async () => {
   const response = await fetch(`${url}`);

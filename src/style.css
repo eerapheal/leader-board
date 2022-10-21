@@ -8,52 +8,60 @@
 #main-div {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  
   margin-top: 30px;
 }
 
 #tittle {
-  margin-left: 33%;
   margin-top: 30px;
+  margin-left: 28%;
 }
 
 #first-div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 50px;
+
 }
 
 .inner-div {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 160px;
 }
 
 .refreash-btn {
   padding: 5px;
 }
 
-.input-items {
-  margin-top: 20px;
+#table {
   border: 2px solid rgb(19, 17, 17);
-
-  /* background-color: black; */
+  width: 350px;
+  margin-top: 30px;
 }
 
-.input-items:nth-child(odd) {
-  background-color: black;
+
+
+tr:nth-child(odd) {
+  background-color: rgb(100, 98, 98);
 }
 
-.plaseholder {
-  margin-top: 20px;
+#name {
+  margin-top: 30px;
 }
 
-.btndiv {
+#score {
+    margin-top: 20px; 
+}
+
+.btn {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-top: 20px;
 }
 
-.submit-btn {
-  margin-top: 20px;
+#submit {
+  /* margin-top: 20px; */
   padding: 5px;
 }
