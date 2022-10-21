@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#main-div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+#tittle {
+  margin-left: 33%;
+  margin-top: 30px;
+}
+
+#first-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.refreash-btn {
+  padding: 5px;
+}
+
+.input-items {
+  margin-top: 20px;
+  border: 2px solid rgb(19, 17, 17);
+
+  /* background-color: black; */
+}
+
+.input-items:nth-child(odd) {
+  background-color: black;
+}
+
+.plaseholder {
+  margin-top: 20px;
+}
+
+.btndiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 5px;
+}
