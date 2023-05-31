@@ -18,8 +18,9 @@ const refresh = () => {
       gamers.push(JSON.stringify(value));
       const listItems = document.createElement('tr');
       listItems.innerHTML = `
-      <td>${value.user}</td>
-      <td>${value.score}</td>`;
+      <td class="tuser">${value.user}</td>
+      <td>${value.score}</td>
+      `;
       table.appendChild(listItems);
     });
   });
