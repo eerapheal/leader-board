@@ -64,8 +64,12 @@ body {
 
 #table {
   border: 2px solid rgb(19, 17, 17);
-  width: 350px;
+  max-width: 250px;
   margin-top: 30px;
+}
+
+td {
+  padding: 0 25px;
 }
 
 tr {
@@ -86,6 +90,11 @@ tr:nth-child(odd) {
   color: rgb(15, 29, 107);
   font-size: 18px;
   font-weight: 600;
+}
+
+.tuser {
+  max-width: 20vw;
+  overflow: hidden;
 }
 
 #score {
